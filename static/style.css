@@ -1,0 +1,107 @@
+#board td {
+    width:32px;
+    height:32px;
+    background-color:#ccc;
+    padding:0px;
+    margin:1px;
+    opacity:0.8;
+}
+
+#board {
+    background-color:#ddd;
+    padding:5px;
+    margin:0 auto;
+}
+
+#pieces {
+    background-color:rgba(101, 67, 33, 0.8);
+    border-radius:5px;
+    width:640px;
+    margin:10px auto;
+    padding:10px;
+    min-height:100px;
+}
+
+#keys {
+    margin:10px;
+    text-align:center;
+    font-size:12px;
+}
+
+.piece {
+    position:relative;
+    float:left;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.block {
+    position:absolute;
+    width:32px;
+    height:32px;
+    background-color:#ccc;
+    margin:1px;
+    opacity:0.8;
+}
+
+.black{
+    color: aqua;
+}
+
+.noBlock{
+    color: black;
+}
+
+#board td.black, .piece.black .block{
+    background-color:aqua;
+}
+
+#board td.noBlock, .block{
+    background-color:black;
+}
+
+.selected {
+    border-style: solid;
+    border-color: red;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#text .text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: white;
+}
